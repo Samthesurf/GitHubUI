@@ -115,11 +115,7 @@ class GithubUI extends StatelessWidget {
                         ),
                         Text(
                           '    Issues',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                          ),
+                          style: TextStyle(color: Colors.white, fontSize: 20),
                           textAlign: TextAlign.justify,
                         ),
                       ],
@@ -151,11 +147,7 @@ class GithubUI extends StatelessWidget {
                         ),
                         Text(
                           '    Pull Requests',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                          ),
+                          style: TextStyle(color: Colors.white, fontSize: 20),
                           textAlign: TextAlign.justify,
                         ),
                       ],
@@ -187,11 +179,7 @@ class GithubUI extends StatelessWidget {
                         ),
                         Text(
                           '    Discussions',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                          ),
+                          style: TextStyle(color: Colors.white, fontSize: 20),
                           textAlign: TextAlign.justify,
                         ),
                       ],
@@ -223,11 +211,7 @@ class GithubUI extends StatelessWidget {
                         ),
                         Text(
                           '    Projects',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                          ),
+                          style: TextStyle(color: Colors.white, fontSize: 20),
                           textAlign: TextAlign.justify,
                         ),
                       ],
@@ -259,11 +243,7 @@ class GithubUI extends StatelessWidget {
                         ),
                         Text(
                           '    Repositories',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                          ),
+                          style: TextStyle(color: Colors.white, fontSize: 20),
                           textAlign: TextAlign.justify,
                         ),
                       ],
@@ -295,11 +275,7 @@ class GithubUI extends StatelessWidget {
                         ),
                         Text(
                           '    Organizations',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                          ),
+                          style: TextStyle(color: Colors.white, fontSize: 20),
                           textAlign: TextAlign.justify,
                         ),
                       ],
@@ -331,11 +307,7 @@ class GithubUI extends StatelessWidget {
                         ),
                         Text(
                           '    Starred',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                          ),
+                          style: TextStyle(color: Colors.white, fontSize: 20),
                           textAlign: TextAlign.justify,
                         ),
                       ],
@@ -358,7 +330,7 @@ class GithubUI extends StatelessWidget {
                         'Favorites',
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 20,
+                          fontSize: 22,
                           fontWeight: FontWeight.bold,
                         ),
                         textAlign: TextAlign.left,
@@ -378,21 +350,18 @@ class GithubUI extends StatelessWidget {
                         backgroundImage: AssetImage('assets/face.png'),
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.all(16.0),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            'Samuel_Surfboard',
-                            style: TextStyle(color: Colors.grey, fontSize: 16),
-                          ),
-                          Text(
-                            'Tensorflow-deep-learning',
-                            style: TextStyle(color: Colors.white, fontSize: 20),
-                          ),
-                        ],
-                      ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Samuel_Surfboard',
+                          style: TextStyle(color: Colors.grey, fontSize: 16),
+                        ),
+                        Text(
+                          'Tensorflow-deep-learning',
+                          style: TextStyle(color: Colors.white, fontSize: 20),
+                        ),
+                      ],
                     ),
                   ],
                 ),
@@ -411,7 +380,7 @@ class GithubUI extends StatelessWidget {
                       'Shortcuts',
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 20,
+                        fontSize: 22,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -432,6 +401,57 @@ class GithubUI extends StatelessWidget {
                       ),
                   ],
                 ),
+                SizedBox(height: 20),
+                Text(
+                  'The things you need, one tap away',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 19,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                SizedBox(height: 10),
+                Padding(
+                  padding: const EdgeInsets.only(left: 25.0, right: 10),
+                  child: Text(
+                    'Fast access to your lists of Issues, Pull Requests, Discussions, and more.',
+                    style: TextStyle(color: Colors.white, fontSize: 20),
+                  ),
+                ),
+                SizedBox(height: 15),
+                Container(
+                  height: 42,
+                  width: 320,
+                  decoration: BoxDecoration(
+                    border: Border.all(color: Colors.grey, width: 0.2),
+                    borderRadius: BorderRadius.circular(6),
+                    color: Colors.grey[900],
+                  ),
+                  child: TextButton(
+                    onPressed: () {},
+                    child: Text(
+                      'GET STARTED',
+                      style: TextStyle(
+                        color: Colors.indigoAccent[100],
+                        fontSize: 18,
+                      ),
+                    ),
+                    // style: TextButton.styleFrom(
+                    //   backgroundColor: Color.fromARGB(255, 23, 24, 27),
+                    //   shape: RoundedRectangleBorder(
+                    //     borderRadius: BorderRadius.circular(6),
+                    //   ),
+                    // ),
+                  ),
+
+                ),
+                Divider(
+                  height: 50,
+                  thickness: 1,
+                  color: Colors.grey[800],
+                  indent: 0,
+                  endIndent: 0,
+                ),
               ],
             ),
           ),
@@ -440,6 +460,72 @@ class GithubUI extends StatelessWidget {
           onPressed: () {},
           backgroundColor: Colors.grey[800],
           child: Icon(OctIcons.copilot, color: Colors.white),
+        ),
+        bottomNavigationBar: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Container(height: 0.5, color: Colors.grey[800]),
+            BottomAppBar(
+              height: 70,
+              shadowColor: Colors.black26,
+              color: Color.fromARGB(255, 23, 24, 27),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  // Fix for the Home icon with text
+                  Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Icon(
+                        Icons.home_filled,
+                        color: Colors.indigoAccent[100],
+                        size: 25,
+                      ),
+                      Text(
+                        'Home',
+                        style: TextStyle(
+                          color: Colors.indigoAccent[100],
+                          fontSize: 12,
+                        ),
+                      ),
+                    ],
+                  ),
+
+                  // Other icons centered vertically
+                  Column(
+                    children: [
+                      Icon(OctIcons.bell, color: Colors.white, size: 25),
+                      Text(
+                        'Notifications',
+                        style: TextStyle(color: Colors.white, fontSize: 12),
+                      ),
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      Icon(OctIcons.telescope, color: Colors.white, size: 25),
+                      Text(
+                        'Explore',
+                        style: TextStyle(color: Colors.white, fontSize: 12),
+                      ),
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      CircleAvatar(
+                        radius: 14,
+                        backgroundImage: AssetImage('assets/face.png'),
+                      ),
+                      Text(
+                        'Profile',
+                        style: TextStyle(color: Colors.white, fontSize: 12),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ],
         ),
       ),
     );
@@ -452,7 +538,7 @@ List<Widget> containers = [
     width: 35,
     decoration: BoxDecoration(
       color: Colors.grey[800],
-      borderRadius: BorderRadius.all(Radius.circular(15.0)),
+      borderRadius: BorderRadius.all(Radius.circular(17.5)),
     ),
     child: Icon(OctIcons.zap, color: Colors.grey[200], size: 20),
   ),
@@ -461,7 +547,7 @@ List<Widget> containers = [
     width: 35,
     decoration: BoxDecoration(
       color: const Color.fromARGB(220, 12, 101, 39),
-      borderRadius: BorderRadius.all(Radius.circular(15.0)),
+      borderRadius: BorderRadius.all(Radius.circular(17.5)),
     ),
     child: Icon(OctIcons.issue_opened, color: Colors.green[200], size: 20),
   ),
@@ -470,7 +556,7 @@ List<Widget> containers = [
     width: 35,
     decoration: BoxDecoration(
       color: Colors.blue[900],
-      borderRadius: BorderRadius.all(Radius.circular(15.0)),
+      borderRadius: BorderRadius.all(Radius.circular(17.5)),
     ),
     child: Icon(OctIcons.git_pull_request, color: Colors.blue[200], size: 20),
   ),
@@ -479,7 +565,7 @@ List<Widget> containers = [
     width: 35,
     decoration: BoxDecoration(
       color: Colors.purple[900],
-      borderRadius: BorderRadius.all(Radius.circular(15.0)),
+      borderRadius: BorderRadius.all(Radius.circular(17.5)),
     ),
     child: Icon(
       OctIcons.comment_discussion,
@@ -492,7 +578,7 @@ List<Widget> containers = [
     width: 35,
     decoration: BoxDecoration(
       color: Colors.orange[900],
-      borderRadius: BorderRadius.all(Radius.circular(15.0)),
+      borderRadius: BorderRadius.all(Radius.circular(17.5)),
     ),
     child: Icon(OctIcons.organization, color: Colors.orange[200], size: 20),
   ),
@@ -501,7 +587,7 @@ List<Widget> containers = [
     width: 35,
     decoration: BoxDecoration(
       color: Colors.pink[900],
-      borderRadius: BorderRadius.all(Radius.circular(15.0)),
+      borderRadius: BorderRadius.all(Radius.circular(17.5)),
     ),
     child: Icon(OctIcons.people, color: Colors.pink[200], size: 20),
   ),
@@ -510,7 +596,7 @@ List<Widget> containers = [
     width: 35,
     decoration: BoxDecoration(
       color: Colors.purple[900],
-      borderRadius: BorderRadius.all(Radius.circular(15.0)),
+      borderRadius: BorderRadius.all(Radius.circular(17.5)),
     ),
     child: Icon(OctIcons.briefcase, color: Colors.purple[200], size: 20),
   ),
@@ -519,7 +605,7 @@ List<Widget> containers = [
     width: 35,
     decoration: BoxDecoration(
       color: Colors.grey[800],
-      borderRadius: BorderRadius.all(Radius.circular(15.0)),
+      borderRadius: BorderRadius.all(Radius.circular(17.5)),
     ),
     child: Icon(OctIcons.file_diff, color: Colors.grey[200], size: 17),
   ),
