@@ -466,7 +466,7 @@ class GithubUI extends StatelessWidget {
           children: [
             Container(height: 0.5, color: Colors.grey[800]),
             BottomAppBar(
-              height: 70,
+              height: 66,
               shadowColor: Colors.black26,
               color: Color.fromARGB(255, 23, 24, 27),
               child: Row(
@@ -513,7 +513,7 @@ class GithubUI extends StatelessWidget {
                   Column(
                     children: [
                       CircleAvatar(
-                        radius: 14,
+                        radius: 12.5,
                         backgroundImage: AssetImage('assets/face.png'),
                       ),
                       Text(
