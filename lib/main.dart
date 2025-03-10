@@ -13,6 +13,7 @@ class GithubUI extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+          // backgroundColor: Colors.blueGrey,
         backgroundColor: Color.fromARGB(255, 23, 24, 27),
         body: SafeArea(
           child: SingleChildScrollView(
@@ -467,7 +468,12 @@ class GithubUI extends StatelessWidget {
         bottomNavigationBar: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Container(height: 0.5, color: Colors.grey[800]),
+            Container(height: 0.5, 
+            decoration: BoxDecoration(
+            color: Colors.grey[800],
+            boxShadow: [BoxShadow(color: Colors.black, blurRadius: 4.0, spreadRadius: 6, offset: Offset(0, 5))]
+            )
+            ),
             BottomAppBar(
               height: 66,
               shadowColor: Colors.black26,
