@@ -73,9 +73,8 @@ Screenshots of the home screen's UI, more to be added later
 
 ## Packages Used
 
--   `flutter_`
--   `font_awesome_flutter:`
--   `icons_plus:`
+-   `font_awesome_flutter`
+-   `icons_plus`
 
 ## Getting Started
 
